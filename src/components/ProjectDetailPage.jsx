@@ -29,7 +29,7 @@ function ProjectDetailPage() {
     'xr-cleanroom': {
       title: 'XR Cleanroom Semiconductor Fabrication Simulator',
       description: 'Virtual reality application for the Meta Quest headsets designed in collaboration with electrical computer engineering faculty to aid in semiconductor education.',
-      date: 'Last Updated: July 2025',
+      date: 'July 2025',
       status: 'Ongoing',
       videoUrl: 'https://www.youtube.com/embed/AS8h9n8L7sw',
       imageUrl: null,
@@ -65,7 +65,7 @@ function ProjectDetailPage() {
               'Step-by-step tutorial videos',
               'Highlighted objects for easy first-time navigation',
               'Score-based system enhanced with visual and audio feedback',
-              'AI companion for adaptive learning support',
+              'AI companion, NOVA, for adaptive learning support',
               'Accurate and optimized model assets create an immersive user experience',
               'Intuitive information center ready to assist with any setting changes or needs for module completion'
             ]
@@ -121,11 +121,11 @@ function ProjectDetailPage() {
     'cafe-pos': {
       title: 'Café Point of Sale System',
       description: 'Local desktop cash-based POS system built on the C#/.NET framework in Visual Studio.',
-      date: 'March 2024',
+      date: 'October 2024',
       status: 'Complete',
       videoUrl: 'https://www.youtube.com/embed/HoYU-CVkUc4',
       imageUrl: null,
-      caption: 'Clean and intuitive POS interface designed for efficient order processing and inventory management',
+      caption: 'Clean and intuitive POS interface designed with the user in mind for efficient order processing.',
       content: {
         sections: [
           {
@@ -166,7 +166,7 @@ function ProjectDetailPage() {
               'Reallusion’s Character Creator 4 to create, adjust, and rig realistic character models.',
               'Reallusion’s iClone to animate the characters with an editor based on MoCap data.',
               'Multiple liquid, cloth, and fire simulations cached in the same project.',
-              'Blend shapes for the below animation.',
+              'Blend shapes for the bellow animation.',
               'Smoother camera motion.'
             ]
           },
@@ -179,7 +179,7 @@ function ProjectDetailPage() {
     'starship-battle': {
       title: '3D Art: Mini Starship Battle',
       description: 'Modeling & Animation II animation project with a kitbashing investigation.',
-      date: 'November 2023',
+      date: 'March 2025',
       status: 'Complete',
       videoUrl: 'https://www.youtube.com/embed/OUtHLLdbFn0',
       imageUrl: null,
@@ -202,7 +202,7 @@ function ProjectDetailPage() {
     'witch-reading': {
       title: '3D Art: Reading of a Witch',
       description: 'Final project render for Modeling & Animation I, taking inspiration from popular fantasy titles and witchy themes.',
-      date: 'May 2023',
+      date: 'December 2024',
       status: 'Complete',
       videoUrl: 'https://www.youtube.com/embed/WCeFNeHOJ6E',
       imageUrl: null,
@@ -222,7 +222,7 @@ function ProjectDetailPage() {
     'portfolio-website': {
       title: 'Portfolio Website',
       description: 'Modern, responsive portfolio website with smooth animations built with React and CSS3.',
-      date: 'January 2025',
+      date: 'July 2025',
       status: 'Complete',
       videoUrl: null,
       imageUrl: websiteCover,
@@ -234,11 +234,18 @@ function ProjectDetailPage() {
             text: 'This website was created with standard web tools including HTML, CSS, and embedded JavaScript. It is also powered by the React framework, which allows for the effective reuse of various card, button, and page components.'
           },
           {
-            heading: 'Why did I choose React?',
+            heading: 'Why did you choose React?',
             text: 'My developer journey technically began back in elementary and middle school when I was block coding for FIRST Robotics, which naturally led me to learn Java as my first real programming language in high school.'
           },
           {
-            text: 'Shortly after learning Java, I moved on to C#/.NET which led me to creating my first substantial coding project: my Cafe POS system. I often hear that I’ve learned my languages “backwards” as a result. That being said, object oriented programming has been engrained in me from day one, so when I was first investigating web frameworks the split between HTML/CSS/JS was puzzling at first, but React came very naturally to me. '
+            text: 'Shortly after learning Java, I moved on to C#/.NET which led me to creating my first substantial coding project: my Cafe POS system. I often hear that I’ve learned my languages “backwards” as a result. That being said, object oriented programming has been engrained in me from day one. When I was first investigating web frameworks the split between HTML/CSS/JS was puzzling, but React came very naturally to me because of its OOP nature.'
+          },
+          {
+            heading: "What was your design inspiration?",
+            text: "This was my first substantial web project. Leading up to actually making it a reality, I spent a lot of time looking at numerous other porfolio websites, and company websites that had previously stood out to me for their clean look. I noticed that many students like to show off through their website design, but I found that from a UX perspective sometimes the (admittedly very) \"cool stuff\" they were creating, would be a little bit overwhelming and detract from the information you are usually expected to convey on a personal website."
+          },
+          {
+            text: "That being said, I still wanted to explore and have fun with my CSS elements. So you'll find some animated elements I added (hopefully) with moderation such as the color changing navbar, the glowing borders on the project cards, the white back-and-forth swiping animations for the professional development cards, and the similar effect that acts as a border around project demo videos when you hover over them. I'd like to note that all of the purple-ish lineart on the main page, and my initials logo were also hand-drawn with my Huion! I had a lot of fun designing this website and picking the right color palette for my personality, and I sincerely hope that you're enjoying it too."
           }
         ]
       }
@@ -353,7 +360,7 @@ return (
       {/* Navigation back */}
       <div className="project-navigation">
         <button 
-          onClick={() => window.history.back()}
+          onClick={() => window.location.href = '/Portfolio/#projects'}
           className="back-button"
         >
           ← Back to Projects

@@ -29,6 +29,36 @@
     --textColor: #eee;
     --backgroundViolet: #3a2c48;
   }
+
+  /*
+   * Mobile Overflow Hotfix
+   */
+  @media screen and (max-width: 800px) {
+  /* Prevent any element from causing horizontal overflow */
+  * {
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure main containers don't overflow */
+  .splash-inner-container,
+  .about-section,
+  .skills-section,
+  .project-section,
+  .professional-section,
+  #contact-section {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Reduce padding on main containers */
+  .about-outer-container,
+  .contact-section-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+   
   /* 
     * HEADER/NAVBAR STYLES
     */
@@ -255,7 +285,7 @@
  */
 .about-section {
   background-color: var(--backgroundViolet);
-  height: 100vh;
+  height: 1300px;
   width: 100wh;
   margin-top: 0;
   margin-bottom: -150px;
@@ -339,6 +369,20 @@
   margin-bottom: 12px;
 }
 
+@media screen and (max-width: 1100px) {
+  .about-section {
+    height: auto !important;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+  }
+  
+  .skills-section {
+    margin-top: 0;
+    padding-top: 3rem;
+  }
+}
+
 .about-inner-container-text {
   margin-left: 5%;
 }
@@ -420,7 +464,7 @@
    .skills-section {
     background-color: var(--backgroundViolet);
     color: white;
-    height: 100vh;
+    height: 1350px;
     text-align: center;
     padding-top: 150px;
     margin-bottom: -30px;
@@ -497,6 +541,9 @@
 
       .container-icons {
         width: 75%;
+        margin: 0 auto;
+        justify-content: center;
+        place-items: center;
       }
    }
 
@@ -816,6 +863,12 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 500px) {
+  .professional-section .section-title {
+    font-size: 75px;
+  }
 }
 
 @media (max-width: 600px) {

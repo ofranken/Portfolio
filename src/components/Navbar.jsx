@@ -1,6 +1,6 @@
 import {FaBars, FaTimes} from "react-icons/fa";
-import {useRef, useState} from "react";
-import {Link} from "react-router-dom";
+import {useRef, useState, useEffect} from "react";
+import {Link, useLocation} from "react-router-dom";
 import "../styles/main.css";
 import logo from "../images/Portfolio Initials Logo - White.png";
 import {useScroll, useMotionValueEvent} from "framer-motion";
@@ -9,18 +9,34 @@ import Resume from  "../images/profdevmedia/Franken Resume.pdf";
 
 function Navbar() {
     const navRef = useRef();
+    const location = useLocation();
     const {scrollY} = useScroll();
-    const [scrolled, setScrolled] = location.pathname == "/" ? useState(false) : useState(true);
+    const isMainPortfolioPage = location.pathname === "/" || location.pathname === "/Portfolio";
+    
+    const [scrolled, setScrolled] = useState(!isMainPortfolioPage);
+
+    useEffect(() => {
+        if (isMainPortfolioPage) {
+            setScrolled(false); // Start purple on main page
+        } else {
+            setScrolled(true);  // Always dark on other pages
+        }
+    }, [location.pathname, isMainPortfolioPage]);
 
     useMotionValueEvent(scrollY, "change", (latest) => {
-        console.log("Page scroll ", latest);
-        if(latest > 840 && !scrolled) {
-            setScrolled(true);
-        } else if(latest < 840 && location.pathname == "/")
-        {
-            setScrolled(false);
+        // Only the main portfolio page has scroll-based navbar color changes
+        if (isMainPortfolioPage) {
+            if(latest > 840 && !scrolled) {
+                setScrolled(true); // Switch to dark
+            } else if(latest < 840) { // Remove the "&& !scrolled" condition
+                setScrolled(false); // Switch to purple
+            }
         }
+        // All other pages: navbar stays dark regardless of scroll
     });
+    
+    // ... rest of your component
+
     
     const showNavbar = () => {
         navRef.current.classList.toggle("responsive_nav");
