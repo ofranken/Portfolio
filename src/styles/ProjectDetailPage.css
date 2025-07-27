@@ -358,3 +358,115 @@ nav,
     max-width: 90%;
   }
 }
+
+/* Mobile-only fixes for Project Detail Page */
+
+@media (max-width: 768px) {
+  .project-detail-container {
+    padding: 2rem 1rem;
+    max-width: 100%;
+    padding-top: 180px;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-header {
+    /* Set same z-index as video elements */
+    position: relative;
+    z-index: 3;
+    margin-bottom: 2rem;
+    width: 100%;
+    order: 1;
+  }
+  
+  .project-page-title {
+    font-size: 2.25rem;
+    /* Same z-index as video */
+    position: relative;
+    z-index: 3;
+    margin-bottom: 1rem;
+  }
+  
+  .project-page-description {
+    font-size: 1.25rem;
+    /* Same z-index as video */
+    position: relative;
+    z-index: 3;
+    margin-bottom: 1rem;
+  }
+  
+  .project-divider {
+    /* Same z-index as video */
+    position: relative;
+    z-index: 3;
+    margin: 1rem 0;
+  }
+  
+  .project-metadata {
+    /* Same z-index as video */
+    position: relative;
+    z-index: 3;
+    margin-bottom: 0;
+  }
+  
+  .project-date,
+  .project-status {
+    /* Same z-index as video */
+    position: relative;
+    z-index: 3;
+  }
+  
+  .project-media {
+    /* Media section - same z-index */
+    position: relative;
+    z-index: 3;
+    order: 2;
+    margin-top: 1rem;
+  }
+  
+  .media-container {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 1rem;
+    margin-top: 25rem;
+  }
+  
+  .project-page-video,
+  .project-page-image {
+    height: 375px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .project-caption {
+    position: relative;
+    z-index: 3;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-article {
+    gap: 2rem;
+    position: relative;
+    z-index: 3;
+    order: 3;
+  }
+  
+  .project-navigation {
+    /* Navigation comes last at the bottom */
+    order: 4;
+    position: relative;
+    z-index: 3;
+    margin-top: 2rem;
+  }
+  
+  .section-heading {
+    font-size: 1.5rem;
+  }
+  
+  .section-text,
+  .bullet-point {
+    font-size: 1rem;
+  }
+}
