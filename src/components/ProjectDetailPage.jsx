@@ -118,6 +118,32 @@ function ProjectDetailPage() {
         ]
       }
     },
+    'black-ops': {
+      title: '3D Art: Ode To Call of Duty Black Ops 3',
+      description: 'Short custom render of an abandoned apocalyptic school with a nod to iconic symbols from COD zombies.',
+      date: 'August 2025',
+      status: 'Complete',
+      videoUrl: 'https://www.youtube.com/embed/FBeehn-IWvc',
+      imageUrl: null,
+      caption: 'Cataclysmic shot featuring Dr. Monty\'s gobblegum machine, the Mystery Box, Speed Cola, and the emblematic Ray Gun.',
+      content: {
+        sections: [
+          {
+            heading: 'So... why Black Ops 3?',
+            text: 'Growing up, I played a lot of video games, and Call of Duty Black Ops 2 & 3 was a set of titles my whole family could enjoy together on the couch as a classic splitscreen co-op. Don\'t get me wrong, Black Ops 4 is an even greater improvement, but the former titles hold a different kind of nostalgia. Tranzit was great, but I always especially admired the loading screen art style and all of the unique models and easter eggs found in Black Ops 3: specifically for the Shadows of Evil and Der Eisendrache maps. So I decided I wanted do a short recreation of some of the most iconic symbols of Black Ops 3. This includes Dr. Monty\'s Gobblegum Machine, the Mystery Box, Speed Cola and the Ray Gun. Note that it was never meant be a one-for-one copy. I made sure to add my own little flair. And who knows... maybe there will be a later installment!'
+          },
+          {
+            heading: 'What new techniques and tools did I use?',
+             bulletPoints: [
+              'Geometry nodes for the gobblegum machine plasma.',
+              'Animated emissive textures.',
+              'Custom blend of procedural textures.',
+              'Continuation of custom alpha and decaling techniques.'
+            ]
+          }
+        ]
+      }
+    },
     'cafe-pos': {
       title: 'Café Point of Sale System',
       description: 'Local desktop cash-based POS system built on the C#/.NET framework in Visual Studio.',

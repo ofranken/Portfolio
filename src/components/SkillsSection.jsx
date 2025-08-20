@@ -20,7 +20,7 @@ function SkillsSection() {
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/portfolio-website`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-jquery-plain"></i></Link> <p>jQuery</p></div>
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/portfolio-website`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-nodejs-plain"></i></Link> <p>Node.js</p></div>
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/portfolio-website`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-react-original"></i></Link> <p>React.js</p></div>
-        <div className="skill-icon-div"><Link className="skill-link" to={`/project/lotr-rings`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-blender-original"></i></Link> <p>Blender</p></div>
+        <div className="skill-icon-div"><Link className="skill-link" to={`/project/black-ops`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-blender-original"></i></Link> <p>Blender</p></div>
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/xr-cleanroom`} onClick={()=> window.scrollTo(0,0)}><i className="devicon-unity-plain"></i></Link> <p>Unity Game Engine</p></div>
         <div className="skill-icon-div"><Link className="skill-link" to={`/project/xr-cleanroom`} onClick={()=> window.scrollTo(0,0)}><VRIcon className="i-vr" height="105px" width="105px"/></Link> <p className="p-vr">Virtual Reality</p></div>
 

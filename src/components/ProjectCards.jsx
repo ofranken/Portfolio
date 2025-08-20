@@ -7,6 +7,7 @@ import machiningCover from "../images/Cover Machining MR.png"
 import cleanroomCover from "../images/Cover XR Cleanroom.png"
 import cafePOSCover from "../images/Cover Cafe POS.png"
 import portfolioCover from "../images/Cover Portfolio Website.png"
+import blackOpsCover from "../images/Cover Black Ops.png"
 
 function ProjectCards() {
   const projects = [
@@ -21,6 +22,12 @@ function ProjectCards() {
       name: "MR Machine Control for Modern Manufacturing",
       description: "Mixed reality-based controller for realtime 3D printer and CNC management built for the Microsoft HoloLens 2.",
       image: machiningCover
+    },
+    {
+      id: 'black-ops',
+      name: "3D Art: Ode To Call of Duty Black Ops 3",
+      description: "Short custom render of an abandoned apocalyptic school with a nod to iconic symbols from COD zombies.",
+      image: blackOpsCover
     },
      {
       id: 'cafe-pos',
